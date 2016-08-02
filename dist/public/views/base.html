@@ -1,0 +1,42 @@
+<md-sidenav md-component-id="left" md-is-open="isSidenavOpen" class="md-sidenav-left">
+	<md-list>
+	    <md-subheader class="md-no-sticky">MENU</md-subheader>
+
+	    <md-divider></md-divider>
+
+	    <md-list-item ui-sref="site.home">
+	      <p> Inicio </p>
+	    </md-list-item>
+
+	    <md-divider></md-divider>
+
+	    <md-list-item ui-sref="site.nosotros">
+	      <p> Nosotros </p>
+	    </md-list-item>
+	    
+	    <md-divider></md-divider>
+	    
+	    <md-list-item ui-sref="site.productos">
+	      <p> Productos </p>
+	    </md-list-item>
+		
+		<md-divider></md-divider>
+
+	    <md-list-item ui-sref="site.servicios">
+	      <p> Servicios </p>
+	    </md-list-item>
+
+	    <md-divider></md-divider>
+
+	    <md-list-item ui-sref="site.contacto">
+	      <p> Contacto </p>
+	    </md-list-item>
+
+	    <md-divider></md-divider>
+	</md-list>
+</md-sidenav>
+<header-app></header-app>
+<section>
+	<ui-view></ui-view>
+</section>
+<footer-app></footer-app>

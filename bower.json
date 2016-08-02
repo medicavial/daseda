@@ -1,0 +1,23 @@
+{
+  "name": "dashboard-app",
+  "version": "0.0.1",
+  "authors": [
+    "Sergio Alcala <checo_2k2@hotmail.com>"
+  ],
+  "description": "librerias necesarias para la app",
+  "license": "MIT",
+  "dependencies": {
+    "angular": "*",
+    "angular-messages": "*",
+    "animate.css": "*",
+    "ngmap": "^1.17.3",
+    "Materialize": "materialize#^0.97.6",
+    "angular-animate": "^1.5.7",
+    "angular-ui-router": "^0.3.1",
+    "wow": "wowjs#^1.1.2",
+    "angular-carousel": "^1.0.1",
+    "material-design-iconic-font": "^2.2.0",
+    "angularfire": "^2.0.1",
+    "material-design-lite": "^1.1.3"
+  }
+}

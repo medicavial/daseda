@@ -15,7 +15,7 @@
 	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
 	<link href='https://fonts.googleapis.com/css?family=Orbitron' rel='stylesheet' type='text/css' />
 
-	<link rel="stylesheet" href="css/style.min.css">
+	<link rel="stylesheet" href="/css/style.min.css">
 	<!--[if lt IE 9]>
 		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
 	< ![endif]-->
@@ -23,12 +23,27 @@
 </head>
 <body>
 
-	<ui-view></ui-view>
+	<header-app></header-app>
+	<section>
+		<ng-view></ng-view>
+	</section>
+	<footer-app></footer-app>
 	
-	<script src="js/vendor.min.js"></script>
+	
+	<script src="/js/vendor.min.js"></script>
 
-
-	<script src="js/app.min.js"></script>
+	<script>
+	  // Initialize Firebase
+	  var config = {
+	    apiKey: "AIzaSyAaAycMSLahNZUCZ_W-aA2K_1YbjensCWw",
+	    authDomain: "project-5419989514993705105.firebaseapp.com",
+	    databaseURL: "https://project-5419989514993705105.firebaseio.com",
+	    storageBucket: "project-5419989514993705105.appspot.com",
+	  };
+	  firebase.initializeApp(config);
+	</script>
+	
+	<script src="/js/app.min.js"></script>
 	
 </body>
 </html>

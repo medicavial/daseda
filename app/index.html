@@ -15,7 +15,7 @@
 	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
 	<link href='https://fonts.googleapis.com/css?family=Orbitron' rel='stylesheet' type='text/css' />
 
-	<!-- build:css css/style.min.css -->
+	<!-- build:css /css/style.min.css -->
 	
 	<!-- bower:css -->
 	<link rel="stylesheet" href="lib/animate.css/animate.css" />
@@ -38,10 +38,15 @@
 	<base href="/">
 </head>
 <body>
-	<!-- <header-app></header-app> -->
-	<ui-view></ui-view>
+
+	<header-app></header-app>
+	<section>
+		<ng-view></ng-view>
+	</section>
+	<footer-app></footer-app>
 	
-	<!-- build:js js/vendor.min.js -->
+	
+	<!-- build:js /js/vendor.min.js -->
 	<!-- bower:js -->
 	<script src="lib/jquery/dist/jquery.js"></script>
 	<script src="lib/angular/angular.js"></script>
@@ -56,6 +61,7 @@
 	<script src="lib/firebase/firebase.js"></script>
 	<script src="lib/angularfire/dist/angularfire.js"></script>
 	<script src="lib/material-design-lite/material.min.js"></script>
+	<script src="lib/angular-route/angular-route.js"></script>
 	<!-- endbower --> 
 	<!-- endbuild -->
 
@@ -70,7 +76,7 @@
 	  firebase.initializeApp(config);
 	</script>
 	
-	<!-- build:js js/app.min.js --> 
+	<!-- build:js /js/app.min.js --> 
 	<!-- inject:js -->    
 	<script src="/scripts/app.js"></script>    
 	<script src="/scripts/config.js"></script>    

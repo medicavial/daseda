@@ -6,7 +6,7 @@
 	*/
 	angular.module('daseda', [
 		'ngMap',
-		'ui.router',
+		'ngRoute',
 		'ngMessages',
 		'ngAnimate',
 		'angular-carousel',
